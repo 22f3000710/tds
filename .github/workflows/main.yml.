@@ -1,5 +1,10 @@
+name: Email Step Example
+
+on: [push]
+
 jobs:
-  test:
+  example-job:
+    runs-on: ubuntu-latest
     steps:
-      - name: 22f3000710@ds.study.iitm.ac.in
-        run: echo "Hello, world!"
+      - name: Step with my email 22f3000710@ds.study.iitm.ac.in
+        run: echo "This step name contains my email address."
