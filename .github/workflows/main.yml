@@ -3,11 +3,11 @@ name: Test Workflow
 on:
   push:
     branches:
-      - master  # or main, depending on your default branch
+      - master  # or your main branch name
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo email 22f3000710@ds.study.iitm.ac.in
-        run: echo "Hello from GitHub Actions!"
+      - name: Step with email 22f3000710@ds.study.iitm.ac.in
+        run: echo "This step contains the required email in its name"
