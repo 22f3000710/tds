@@ -3,11 +3,11 @@ name: Test Workflow
 on:
   push:
     branches:
-      - master  # or your main branch name
+      - master  # <-- use your default branch here
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Step with email 22f3000710@ds.study.iitm.ac.in
-        run: echo "This step contains the required email in its name"
+      - name: "22f3000710@ds.study.iitm.ac.in"
+        run: echo "Hello from your step with the email in the name"
